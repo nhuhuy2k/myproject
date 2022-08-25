@@ -1,23 +1,15 @@
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 import DashBoard from "../pages/dashboard/Dashboard"
 import AddProduct from "../pages/add_product/AddProduct";
-import EditProduct from "../pages/edit_product/EditProduct";
+import Accounts from "../pages/accounts/Accounts"
 
-const publicRoutes = [
-  { path: "/", compoment: DashBoard },
-  { path: "/addproduct", compoment: AddProduct },
-  { path: "/editproduct", compoment: EditProduct },
+export const publicRoutes = [
+  
 ];
 
-const RoutesConfig = () => {
-  return (
-    <Routes>
-      {publicRoutes.map((route, index) => {
-        return (
-          <Route key={index} path={route.path} element={<route.compoment />} />
-        );
-      })}
-    </Routes>
-  );
-};
-export default RoutesConfig;
+export const privateRoutes = [
+  { path: "/", component: DashBoard },
+  { path: "/addproduct", component: AddProduct },
+  { path: "/accounts", component: Accounts },
+]
+

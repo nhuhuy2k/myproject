@@ -1,0 +1,13 @@
+.ant-form-item-control-input-content .btn-submit{
+    margin-right: 40px;
+    border-radius: 6px;
+    font-weight: 700 ;
+}
+
+.ant-form-item-control-input-content .btn-reset{
+   background: rgb(57, 206, 57) ;
+   font-weight: 700 ;
+   color: white ;
+    border-radius: 6px;
+}
+
